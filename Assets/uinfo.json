@@ -1,6 +1,6 @@
 {
     "updates": {
-        "spoofer": false,
+        "spoofer": true,
         "scripts": false
     }
 }
