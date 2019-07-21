@@ -1,6 +1,12 @@
 {
     "updates": {
-        "spoofer": true,
-        "scripts": false
+        "spoofer": {
+            "status": true,
+            "version": "1.0.0"
+        },
+        "scipts": {
+            "status": false,
+            "version": "1.0.0"
+        }
     }
 }
