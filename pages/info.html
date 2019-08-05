@@ -64,8 +64,31 @@
 </div>
 </div>
 <div class=twitter>
-<a class="twitter-timeline" href="https://twitter.com/JustCheats?ref_src=twsrc%5Etfw"></a>
+<a class="twitter-timeline" href="https://twitter.com/JustCheats" data-aria-polite="assertive"></a>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script>
+var widgetCSS = "" +
+  `body{}` +
+  `.timeline-Body{background:#0d0d0f; border: 0;border-left:3px solid #fff000;border-radius:2px}`+
+  `.timeline-Header{display:none}` +
+  `.timeline-Footer{display:none}` +
+  `.timeline-Header-title{color: white}`+
+  `.timeline-LoadMore{display:none}`+
+  `.timeline-Tweet-text{color: #fff}`+
+  `.TweetAuthor-name{color: #fff}`+
+  `.timeline-TweetList-tweet{border: 0px}`+
+  `.timeline-Tweet{user-select:none; pointer-events: none}`+
+  `.timeline-Widget{border:0;background:none}`
+let tlink = document.getElementsByClassName("timeline-Tweet")
+tlink.target;
+
+function tEmbed(){
+  var w = document.getElementById("twitter-widget-0").contentDocument;
+  //.contentWindow.document;
+  var s = document.createElement("style");
+  s.innerHTML = widgetCSS;
+  s.type = "text/css";w.head.appendChild(s);}
+  </script>
 </div>
 <div class=footer>
 <a href=./tos>Terms Of Use | Privacy Policy</span></a><a href=./backpages> | Back Pages</a>
