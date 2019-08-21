@@ -5,7 +5,7 @@
             "version": "1.0.1"
         },
         "scipts": {
-            "status": false,
+            "status": true,
             "version": "1.0.0"
         }
     }
