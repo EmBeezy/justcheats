@@ -1,4 +1,4 @@
-![justcheats.net](https://justcheats.net/Assets/icons/justcheats.png "justcheats.net")
+![justcheats.net](https://justcheats.net/Assets/icons/Logo.png "justcheats.net")
 
 # JustCheats
 
