@@ -1,0 +1,80 @@
+body{user-select:none;background:#14151b;padding:0;margin:0;font-family:HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif,Roboto,Poppins,Rubik}
+body::-webkit-scrollbar{display:none}
+/* Size and Padding - Important Stuff */
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+body {
+	font-size: 13px;
+	line-height: 18px;
+	color: #f1ebfc;
+	height: 100%;
+	background-color: #14151b;
+
+}
+.contain_all {
+	text-align: center;
+	display: inline;
+	display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+	width: 100%;
+}
+.contain_hor {
+	display: table-cell;
+	vertical-align: middle;
+}
+.contain_vir {
+	display: inline-block;
+}
+
+/*
+.big{min-width:100px;height:33px;margin:auto;position:relative;white-space:nowrap;display:inline-block;padding:0 25px}*/
+#dybT2{position:absolute;opacity:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);transition:opacity 25ms}
+
+.dyb:hover .dyb2 .dybT #dybT{opacity:0;}
+.dyb:hover .dyb2 .dybT #dybT2{opacity:1;transition-duration:.3s}
+
+.dyb .dyb2{cursor:pointer;}
+.dyb{
+    outline: none;
+    display:inline-block;
+    border:none;
+    padding: 0;
+    background: none;
+
+}
+/*Slow-Far Expand
+.dyb:hover .dybL{-webkit-transform:translateX(-20px);transform:translateX(-20px)}
+.dyb:hover .dybR{-webkit-transform:translateX(20px);transform:translateX(20px)}
+
+/*Fast-Far Expand
+.dyb:hover .dyb2 .dybL{-webkit-transform:translateX(-32px);transform:translateX(-32px)}
+.dyb:hover .dyb2 .dybR{-webkit-transform:translateX(32px);transform:translateX(32px)}
+*/
+/*Slow Expand*/
+.dyb:hover .dyb2 .dybL{-webkit-transform:translateX(-10px);transform:translateX(-10px)}
+.dyb:hover .dyb2 .dybR{-webkit-transform:translateX(10px);transform:translateX(10px)}
+
+/*Colors*/
+.dyb:hover .dyb2 .dybL path{fill:url("#hoverButtonBackgroundLeft")!important;stroke:url("#hoverButtonBorderLeft")!important;fill-opacity:1!important;stroke-opacity:1!important}
+.dyb:hover .dyb2 .dybR path{fill:url("#hoverButtonBackgroundRight")!important;stroke:url("#hoverButtonBorderRight")!important;fill-opacity:1!important;stroke-opacity:1!important}
+.bgbR{padding:0!important;position:absolute;bottom:0;left:0;right:-1px;height:1px;opacity:0;z-index:3;background:linear-gradient(90deg,#e45c31,#ed2162);transition:all .2s}
+.bgbL{position:absolute;top:0;left:0;right:0;bottom:0;z-index:2}
+.bgbL:after,.bgbL:before{content:"";position:absolute;left:0;bottom:0;height:100%;width:1px;background:linear-gradient(180deg,rgba(229,54,51,0),rgba(230,26,109,.62));background-position:0 290px;background-repeat:no-repeat;transition:background-position .15s ease-out;opacity:.68}
+.bgb{position:relative;height:200px;display:block;text-decoration:none;text-transform:uppercase;transition:all .5s ease;background-position:0 290px;background-repeat:no-repeat;transition:background-position .2s ease-out;background-image:linear-gradient(180deg,rgba(45,30,44,0),#2d1e2c);width: 10%;float: left;}
+.bgb:hover{color:#fff;background-position:0 0}
+.bgb:hover .bgbR{opacity:1}
+.bgb:hover .bgbL:after,.bgb:hover .bgbL:before{background-position:0 0}
+.dyb2{min-width:100px;height:33px;margin:auto;position:relative;white-space:nowrap;padding:0 25px;box-sizing: border-box;}
+.dybL{left:0}
+.dybL,.dybR{width:68px;height:100%;position:absolute;top:0;-webkit-transform:translateZ(0);transform:translateZ(0);transition:-webkit-transform .125s ease-out;transition:transform .125s ease-out;transition:transform .125s ease-out,-webkit-transform .125s ease-out}
+.dybR{right:0}
+.dybT{font-size:11px;font-weight:500;letter-spacing:1.4px;line-height:33px;position:relative;z-index:1;text-transform:uppercase;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
+.live{animation:lives 2s infinite cubic-bezier(.19,1,.22,1);-webkit-animation:lives 2s infinite cubic-bezier(.19,1,.22,1);transform: translateZ(0);-webkit-transform: translateZ(0);background:#fff;width:5px;height:5px;display:block;position:absolute;top:3px;left:4px;border-radius:50%;z-index:2;}.live::before{content:"";position:absolute;width:500%;height:500%;border-radius:50%;z-index:1}
+@-webkit-keyframes lives{0%,to{opacity:1}50%{opacity:0}}
+@keyframes lives{0%,to{opacity:1}50%{opacity:0}}
