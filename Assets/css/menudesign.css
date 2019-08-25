@@ -34,6 +34,7 @@ body {
 
 /*Menu Body*/
 .menu_body {
+    position: relative;
     background-image: url(../icons/backdrop.webp);
     height: 350px;
     width: 700px;
@@ -84,6 +85,11 @@ body {
 .dybT{font-size:11px;font-weight:500;letter-spacing:1.4px;line-height:33px;position:relative;z-index:1;text-transform:uppercase;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
 
 /*Life Dot Animation*/
-.live{animation:lives 2s infinite cubic-bezier(.19,1,.22,1);-webkit-animation:lives 2s infinite cubic-bezier(.19,1,.22,1);transform: translateZ(0);-webkit-transform: translateZ(0);background:#fff;width:5px;height:5px;display:block;position:absolute;top:3px;left:4px;border-radius:50%;z-index:2;}.live::before{content:"";position:absolute;width:500%;height:500%;border-radius:50%;z-index:1}
+.live
+    {animation:lives 2s infinite cubic-bezier(.19,1,.22,1);
+        -webkit-animation:lives 2s infinite cubic-bezier(.19,1,.22,1);
+    transform: translateZ(0);-webkit-transform: translateZ(0);background:#fff;width:5px;height:5px;display:block;position:absolute;top:8px;left:8px;border-radius:50%;z-index:2;}.live::before{content:"";position:absolute;width:500%;height:500%;border-radius:50%;z-index:1}
 @-webkit-keyframes lives{0%,to{opacity:1}50%{opacity:0}}
 @keyframes lives{0%,to{opacity:1}50%{opacity:0}}
+.banner_par{width:100px;height:100px;overflow:hidden;position:absolute;top:0;right:0}
+.banner{overflow:hidden;width:125px;height:25px;line-height:25px;font-size:8px;letter-spacing:1.2px;position:absolute;top:17px;right:-32px;-webkit-transform:rotate(45deg);transform:rotate(45deg);text-align:center;background:linear-gradient(90deg,#ef5f42,#d90f6c)}
