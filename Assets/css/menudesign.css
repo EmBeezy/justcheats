@@ -40,6 +40,9 @@ body {
     width: 700px;
     border: 1px solid #ed2162;
 }
+.menu_body2 {
+    padding: 25px;
+}
 /*
 .big{min-width:100px;height:33px;margin:auto;position:relative;white-space:nowrap;display:inline-block;padding:0 25px}*/
 #dybT2{position:absolute;opacity:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);transition:opacity 25ms}
@@ -69,8 +72,8 @@ body {
 .dyb:hover .dyb2 .dybR{-webkit-transform:translateX(10px);transform:translateX(10px)}
 
 /*Colors*/
-.dyb:hover .dyb2 .dybL path{fill:url("#hoverButtonBackgroundLeft")!important;stroke:url("#hoverButtonBorderLeft")!important;fill-opacity:1!important;stroke-opacity:1!important}
-.dyb:hover .dyb2 .dybR path{fill:url("#hoverButtonBackgroundRight")!important;stroke:url("#hoverButtonBorderRight")!important;fill-opacity:1!important;stroke-opacity:1!important}
+.dyb:hover .dyb2 .dybLL path{fill:url("#hoverButtonBackgroundLeft")!important;stroke:url("#hoverButtonBorderLeft")!important;fill-opacity:1!important;stroke-opacity:1!important}
+.dyb:hover .dyb2 .dybRR path{fill:url("#hoverButtonBackgroundRight")!important;stroke:url("#hoverButtonBorderRight")!important;fill-opacity:1!important;stroke-opacity:1!important}
 .bgbR{padding:0!important;position:absolute;bottom:0;left:0;right:-1px;height:1px;opacity:0;z-index:3;background:linear-gradient(90deg,#e45c31,#ed2162);transition:all .2s}
 .bgbL{position:absolute;top:0;left:0;right:0;bottom:0;z-index:2}
 .bgbL:after,.bgbL:before{content:"";position:absolute;left:0;bottom:0;height:100%;width:1px;background:linear-gradient(180deg,rgba(229,54,51,0),rgba(230,26,109,.62));background-position:0 290px;background-repeat:no-repeat;transition:background-position .15s ease-out;opacity:.68}
