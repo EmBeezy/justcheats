@@ -39,6 +39,7 @@ body {
     height: 350px;
     width: 700px;
     border: 1px solid #ed2162;
+    float: left;
 }
 .menu_body2 {
     padding: 25px;
@@ -70,6 +71,8 @@ body {
 /*Slow Expand*/
 .dyb:hover .dyb2 .dybL{-webkit-transform:translateX(-10px);transform:translateX(-10px)}
 .dyb:hover .dyb2 .dybR{-webkit-transform:translateX(10px);transform:translateX(10px)}
+.dyb:hover .dyb2 .dybLL{-webkit-transform:translateX(-20px);transform:translateX(-20px)}
+.dyb:hover .dyb2 .dybRR{-webkit-transform:translateX(20px);transform:translateX(20px)}
 
 /*Colors*/
 .dyb:hover .dyb2 .dybLL path{fill:url("#hoverButtonBackgroundLeft")!important;stroke:url("#hoverButtonBorderLeft")!important;fill-opacity:1!important;stroke-opacity:1!important}
@@ -96,3 +99,69 @@ body {
 @keyframes lives{0%,to{opacity:1}50%{opacity:0}}
 .banner_par{width:100px;height:100px;overflow:hidden;position:absolute;top:0;right:0}
 .banner{overflow:hidden;width:125px;height:25px;line-height:25px;font-size:8px;letter-spacing:1.2px;position:absolute;top:17px;right:-32px;-webkit-transform:rotate(45deg);transform:rotate(45deg);text-align:center;background:linear-gradient(90deg,#ef5f42,#d90f6c)}
+
+
+/* ~~SIDE MENU~~ */
+/* your prob here cause u want the menu well it is here but on a side note fuck you :)*/
+.side_menu {
+    position: relative;
+    background-image: url(../icons/backdrop.webp);
+    height: 700px;
+    width: 290px;
+    border: 1px solid #ed2162;
+    float: right;
+    margin-left: 25px;
+}
+.side_menu2 {
+    padding: 25px;
+}
+.banner2 {
+    overflow:hidden;
+    width:125px;
+    height:25px;
+    line-height:25px;
+    font-size:8px;
+    letter-spacing:1.2px;
+    position:absolute;
+    top:17px;right:-32px;
+    -webkit-transform:rotate(45deg);
+    transform:rotate(45deg);
+    text-align:center;
+    background:linear-gradient(90deg,#f8801d,#f5143a)
+}
+.side_header {
+    height: 100px;
+    width: 100%;
+    font-size: 15px;
+    margin: 0;
+    text-align: center;
+    display: table;
+}
+.side_header p {
+    color: #fff000;
+    font-size: 30px;
+    font-weight: bold;
+    display: table-cell;
+    vertical-align: middle;
+}
+.side_header p span {
+    color: #ed2162;
+}
+.side_menu2 li {
+    padding: 12px;
+    list-style: none;
+    margin-bottom: 6px;
+    /*
+    font-size: 16px;
+    font-weight: bold;
+    background: rgba(16, 17, 22, .75);
+    box-shadow: 2px 2px 4px rgba(2,2,3,.5);
+    color: #969696;
+    */
+}
+.side_menu2 li:hover {
+    /*
+    box-shadow: 4px 4px 6px rgba(2,2,3,.5);
+    color:#c2c4c7;
+    */
+}
